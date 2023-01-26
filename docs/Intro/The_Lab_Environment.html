@@ -9,6 +9,25 @@
 <script src="../js/jquery-3.4.1.min.js"></script> 
 <script src="../js/popper.min.js"></script> 
 <script src="../js/bootstrap-4.4.1.js"></script>
+<style>
+    .yt {
+      position: relative;
+      display: block;
+      width: 90%; /* width of iframe wrapper */
+      height: 0;
+      margin: auto;
+      padding: 0% 0% 56.25%; /* 16:9 ratio */
+      overflow: hidden;
+    }
+    .yt iframe {
+      position: absolute;
+      top: 0; bottom: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+</style>
+
 <title>The Lab Environment</title>
 </head>
 
@@ -21,10 +40,12 @@
         <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
         style="overflow:hidden;" src="https://www.screencast.com/users/Pexip-Academy/folders/Lab%20Screencasts/media/941ff587-4207-49c1-89b2-96c7376bf6d9/embed?source=152" height="405" width="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </p> -->
+    <div class="yt">
         <p>
-        <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
-        style="overflow:hidden;" src="https://www.youtube.com/embed/INOICyh3LJQ" height="405" width="260" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </p>
+            <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+            style="overflow:hidden;" src="https://www.youtube.com/embed/INOICyh3LJQ" height="315" width="560" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </p>
+    </div>
     <p>&nbsp;</p>
     <p> These lab environments are provided in conjunction with CloudShare. These offer us a space to deliver repeatable and scalable environments for many simultaneous users.</p>
     <p>As the trainee, you can interact with the lab using your browser, set the language of your choice (for the environment), and troubleshoot any Internet connectivity issues you may experience. Your environment is provisioned for some time (currently, this is a total runtime of 2 weeks, but this is subject to change), and you can dip in and out of the lab as you wish as it will automatically suspend after 1 hour of inactivity. If things go wrong or you wish to start over, simply reset the environment.</p>
